@@ -1,0 +1,13 @@
+.hero {
+  width: 100%;
+}
+.hero .container {
+  display: flex;
+}
+.hero .container .content {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=Land.css.map */

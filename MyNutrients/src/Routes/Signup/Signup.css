@@ -1,0 +1,109 @@
+.signup {
+  min-height: 2rem;
+  display: grid;
+  place-items: center; /* Centers content horizontally and vertically */
+  height: 100vh;
+}
+.signup .form {
+  min-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: 0.4s ease-in-out;
+}
+.signup .form:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+.signup .form #heading {
+  text-align: center;
+  margin: 1em 0;
+  color: #fff;
+  font-size: 2em;
+}
+.signup .form .field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+.signup .form .field .input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+.signup .form .field .input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+.signup .form .field .email-icon {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.signup .form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5em;
+  gap: 1rem;
+}
+.signup .form .btn .button2 {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup .form .btn .button2:hover {
+  background-color: black;
+  color: white;
+}
+.signup .form .btn .button2 a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup .form .btn .button2 {
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+}
+.signup .form .btn span {
+  color: white;
+}
+.signup .form .btn span a {
+  color: red;
+}
+.signup .form .button3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+.signup .form .button3:hover {
+  background-color: red;
+}/*# sourceMappingURL=Signup.css.map */

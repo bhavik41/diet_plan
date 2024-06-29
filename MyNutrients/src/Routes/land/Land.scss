@@ -1,0 +1,17 @@
+.hero{
+    width: 100%;
+
+
+    .container{
+        display: flex;
+
+
+    .content{
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+}

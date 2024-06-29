@@ -1,0 +1,136 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 6%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--whiteColor);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.242);
+}
+
+.logo {
+  color: var(--blackColor);
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.navBar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: var(--whiteColorDeam);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+  transition: right 0.3s ease-in-out;
+  z-index: 3000;
+}
+
+.navBar.activeSidebar {
+  right: 0;
+}
+
+.navLists {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0;
+}
+
+.navLink {
+  color: var(--textColor);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: var(--PrimaryColor);
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  color: white;
+  background-color: #333;
+}
+
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.toggleNavbar {
+  font-size: 25px;
+  color: var(--PrimaryColor);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggleNavbar:hover {
+  color: var(--SecondaryColor);
+}
+
+.toggleNavbar:hover {
+  color: var(--SecondaryColor);
+}
+
+@media screen and (min-width: 1105px) {
+  .navBar {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    display: flex;
+  }
+  .navLists {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+  }
+  .navItem {
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  .toggleNavbar {
+    display: none; /* Hide toggle button on wider screens */
+  }
+}
+@media screen and (max-width: 1270px) {
+  .navLists {
+    display: flex;
+    gap: 0.5rem;
+  }
+}/*# sourceMappingURL=Navbar.css.map */
